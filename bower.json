@@ -1,0 +1,17 @@
+{
+  "name": "shadow-dom-focus-ring",
+  "authors": [
+    "Emil Billberg <emil.billberg@apegroup.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

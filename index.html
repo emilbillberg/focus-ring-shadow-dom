@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+    <title>Shadow dom | Focus-ring</title>
+
+    <script>
+        window.Polymer = {
+            dom: 'shady',
+            // dom: 'shadow',
+            lazyRegister: true
+        };
+    </script>
+    
+    <script src="focus-ring.js"></script>
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="bower_components/polymer/polymer.html">
+    <link href="my-app.html" rel="import">
+
+    <style>
+
+        html {
+            height: 100%;
+            font-size: 62.5%;
+            background-color: #fff;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+        }
+
+        :focus:not(.focus-ring) {
+            outline: none;
+        }
+
+    </style>
+
+</head>
+<body>
+    <my-app></my-app>
+</body>
+</html>
